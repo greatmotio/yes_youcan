@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default navbar-custom">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Yes!! You can!!</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      	<% if !user_signed_in? %>
+          <li><%= link_to 'Yes!! You can!!に関して', '#' %></li>
+          <li><%= link_to 'アファメーションとは', '#' %></li>
+	        <li><%= link_to 'アカウント作成', new_user_registration_path %></li>
+	        <li><%= link_to 'ログイン', new_user_session_path %></li>
+	      <% else %>
+          <li><%= link_to '使い方', '#' %></li>
+          <li><%= link_to 'アファメーションの作り方', '#' %></li>
+	      	<li><%= link_to 'あなたのゴール設定', post_path(current_user) %></li>
+	      	<li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+      	<% end %>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>

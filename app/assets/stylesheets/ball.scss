@@ -1,0 +1,71 @@
+
+
+.Codetank-20170108 {
+		margin: 40px 0;
+		margin: 2.5rem 0;
+	}
+	.moving-box-lo {
+		margin: 16px 0;
+		margin: 1rem 0;
+		margin-right: 100px;
+	}
+	.moving-box-lo__mod {
+		background: #ffcc33;
+		height: 100px;
+		width: 100px;
+		border-radius: 50%
+	}
+	.by-transform1 {
+		-ms-animation:
+			move-by-transform1 1s linear 1 normal 0s both
+		;
+		-webkit-animation:
+			move-by-transform1 1s linear 1 normal 0s both
+		;
+		animation:
+			move-by-transform1 1s linear 1 normal 0s both running
+		;
+	}
+	@keyframes move-by-transform1 {
+		0% {
+			transform: translate(0,0);
+		}
+		100% {
+			transform: translate(100%,0);
+		}
+	}
+	@-webkit-keyframes move-by-transform1 {
+		0% {
+			transform: translate(0,0);
+		}
+		100% {
+			transform: translate(100%,0);
+		}
+	}
+	.by-transform2 {
+		-ms-animation:
+			move-by-transform2 1s linear 1 normal 0s both
+		;
+		-webkit-animation:
+			move-by-transform2 1s linear 1 normal 0s both
+		;
+		animation:
+			move-by-transform2 1s linear 1 normal 0s both running
+		;
+	}
+	@keyframes move-by-transform2 {
+		0% {
+			transform: translate(100%,0);
+		}
+		100% {
+			transform: translate(0,0);
+		}
+	}
+	@-webkit-keyframes move-by-transform2 {
+		0% {
+			transform: translate(100%,0);
+		}
+		100% {
+			transform: translate(0,0);
+		}
+	}

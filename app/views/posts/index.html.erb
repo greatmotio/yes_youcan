@@ -1,0 +1,9 @@
+<h2>あなたはゴールを達成する</h2>
+
+<%= link_to 'ゴールを追加する', new_post_path %>
+
+<ul>
+		<% @posts.each do |post| %>
+			<li><%= post.content %><%= post.user_id %></li>
+		<% end %>
+</ul>
